@@ -1,1 +1,2 @@
-console.log("Hi! I am the entry file");
+import App from './jsFiles/App.jsx'
+App();
