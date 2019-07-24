@@ -1,0 +1,11 @@
+{
+  "name": "webpackconfig",
+  "version": "1.0.0",
+  "description": "A npm package for trying out webpack configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jhalaa",
+  "license": "ISC"
+}
