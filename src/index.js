@@ -8,5 +8,6 @@ import hp3 from './images/hp3.gif'
 import infinity from './svg/infinity.svg'
 
 
-
-App();
+export default function main(){
+    return App()+hp+hp1+hp2+hp3+infinity;
+}

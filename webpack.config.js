@@ -20,6 +20,9 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
                 query: {
+                    // have some version issues and could not use 'es2015', 'react'
+                    // as specified in the example link provided. Get error Plugin/Preset files are not allowed to export objects, only functions
+                    //this work around works - INVESTIGATE FURTHER
                     presets: ['@babel/react', '@babel/preset-env']
                 }
             },
