@@ -20,8 +20,7 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['@babel/react', '@babel/preset-env'],
-                    compact: false
+                    presets: ['@babel/react', '@babel/preset-env']
                 }
             },
             {
@@ -57,6 +56,18 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            // 1mb === 1000000-1 bytes
+                            limit: 999999
+                        }
+                    }
+                ]
+            }
         ]
     },
     plugins: [MiniCssExtractPluginConfig]
